@@ -1,9 +1,7 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import About from '../components/About'
+import Custom404 from '../components/404';
 
-const Home: NextPage = () => {
+function Page404() {
   return (
       <div className="space-y-14 lg:space-y-24">
         <Head>
@@ -12,10 +10,10 @@ const Home: NextPage = () => {
         </Head>
 
         <main className="max-w-4xl mx-auto mt-16 antialiased">
-          <About />
+          <Custom404 />
         </main>
       </div>
   )
 }
 
-export default Home
+export default Page404;
